@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial;
+}
+
+body {
+  background: #f4f3f0;
+  padding: 20px;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.2rem;
+}
+
+.controls button {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  cursor: pointer;
+}
+
+.layout {
+  display: flex;
+  gap: 25px;
+}
+
+.entry-panel {
+  width: 300px;
+  background: #f8f7f4;
+  padding: 16px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.entry-content {
+  white-space: pre-line;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.calendar {
+  flex: 1;
+}
+
+.weekday-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+}
+
+.day {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  min-height: 85px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.1s;
+  font-size: 1.1rem;
+}
+
+.day:hover {
+  background: #f0ece6;
+}
+
+.day-number {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.has-entry {
+  background: #fff7d1;
+  border-color: #e6d186;
+}
+
+.milestone-dot {
+  width: 10px;
+  height: 10px;
+  background: #d4a017;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
